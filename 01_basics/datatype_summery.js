@@ -33,3 +33,23 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+// stack (premetive) => create copy
+//heap (non-premetive) => direct refrence
+
+let user1 = "user@gmail.com"
+let user2 = user1
+
+user2 = "deep@gmail.com"
+console.log(user1);
+console.log(user2);
+
+let userone = {
+    email : "user@gmail.com",
+    upi : 24325345646
+}
+
+let usertwo = userone
+console.log(userone);
+console.log(usertwo);
+
