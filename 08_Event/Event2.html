@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async program</title>
+</head>
+<body>
+    <h1>learn with javascript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const myfun = function(){
+        console.log("hyy developer")
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "learning start with deep gondaliya"
+    }
+
+    const timeout = setTimeout(changeText, 2000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(timeout)
+        console.log("stopped")
+    })
+</script>
+</html>
