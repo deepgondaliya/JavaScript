@@ -2,6 +2,7 @@
 // let mychannel = "chai     "
 
 // console.log(myName.trueLength);
+//Problem solve in the ending
 
 
 let myHeros = ["thor", "spiderman"]
